@@ -1,0 +1,3 @@
+[submodule "Ariazel/vendor/spdlog"]
+	path = Ariazel/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git

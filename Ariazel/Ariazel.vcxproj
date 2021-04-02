@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Ariazel\Log.h" />
     <ClInclude Include="src\Ariazel.h" />
     <ClInclude Include="src\Ariazel\Application.h" />
     <ClInclude Include="src\Ariazel\Core.h" />
     <ClInclude Include="src\Ariazel\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Ariazel\Log.cpp" />
     <ClCompile Include="src\Ariazel\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -66,6 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>AZ_PLATFORM_WINDOWS;ARIAZEL_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Ariazel\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
