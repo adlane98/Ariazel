@@ -7,7 +7,7 @@ extern Ariazel::Application* Ariazel::CreateApplication();
 
 int main(int argc, char **argv) 
 {
-	auto app = new Ariazel::Application();
+	auto app = Ariazel::CreateApplication();
 	app->Run();
 	delete app;
 	return 0;

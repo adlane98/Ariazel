@@ -1,4 +1,5 @@
 #include "Application.h"
+#include <stdio.h>
 
 namespace Ariazel {
 
@@ -11,7 +12,8 @@ namespace Ariazel {
 	{
 	}
 
-	void Application::Run() {
+	void Application::Run() 
+	{
 		while (true);
 	}
 }
