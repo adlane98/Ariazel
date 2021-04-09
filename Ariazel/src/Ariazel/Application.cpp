@@ -1,3 +1,4 @@
+#include "azpch.h"
 #include "Application.h"
 
 #include "Ariazel/Events/MouseEvent.h"

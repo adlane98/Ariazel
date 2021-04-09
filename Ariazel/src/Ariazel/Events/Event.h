@@ -2,9 +2,6 @@
 
 #include "Ariazel/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Ariazel {
 
 	enum class EventType

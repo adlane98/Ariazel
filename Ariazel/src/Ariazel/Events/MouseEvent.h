@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Ariazel {
 	class ARIAZEL_API MouseMovedEvent : public Event
 	{

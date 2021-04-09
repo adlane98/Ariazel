@@ -1,3 +1,4 @@
+#include "azpch.h"
 #include "Log.h"
 
 
