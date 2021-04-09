@@ -1,5 +1,6 @@
 #include "Log.h"
 
+
 namespace Ariazel 
 {
 	std::shared_ptr<spdlog::logger> Log::s_CoreLogger;

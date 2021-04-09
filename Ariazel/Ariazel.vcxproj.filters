@@ -4,6 +4,9 @@
     <Filter Include="Ariazel">
       <UniqueIdentifier>{2D74D8A0-9953-573C-A26B-E2120ECABD9D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ariazel\Events">
+      <UniqueIdentifier>{710B5665-5DD9-496B-466D-BA9132DA25D0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Ariazel.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Ariazel\EntryPoint.h">
       <Filter>Ariazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ariazel\Events\ApplicationEvent.h">
+      <Filter>Ariazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ariazel\Events\Event.h">
+      <Filter>Ariazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ariazel\Events\KeyEvent.h">
+      <Filter>Ariazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ariazel\Events\MouseEvent.h">
+      <Filter>Ariazel\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Ariazel\Log.h">
       <Filter>Ariazel</Filter>

@@ -1,5 +1,8 @@
 #include "Application.h"
-#include <stdio.h>
+
+#include "Ariazel/Events/MouseEvent.h"
+#include "Ariazel/Log.h"
+
 
 namespace Ariazel {
 
@@ -14,6 +17,11 @@ namespace Ariazel {
 
 	void Application::Run() 
 	{
+		MouseButtonPressedEvent e(2);
+
+		if (e.IsInCategory(EventCategoryApplication))
+			AZ_TRACE(e);
+
 		while (true);
 	}
 }

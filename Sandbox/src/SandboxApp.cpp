@@ -2,7 +2,7 @@
 
 class Sandbox : public Ariazel::Application
 {
-public:
+public: 
 	Sandbox() 
 	{
 
