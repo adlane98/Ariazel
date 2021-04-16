@@ -1,3 +1,4 @@
+#include "azpch.h"
 #include <Ariazel.h>
 
 class Sandbox : public Ariazel::Application

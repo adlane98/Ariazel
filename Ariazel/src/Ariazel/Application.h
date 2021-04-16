@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Core.h"
-#include "Ariazel/Events/Event.h"
+#include "Events/Event.h"
 
 namespace Ariazel {
 

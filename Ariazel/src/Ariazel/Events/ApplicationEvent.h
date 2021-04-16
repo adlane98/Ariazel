@@ -2,6 +2,7 @@
 
 #include "Event.h"
 
+
 namespace Ariazel {
 	class ARIAZEL_API WindowResizeEvent : public Event
 	{
