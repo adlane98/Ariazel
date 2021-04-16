@@ -9,6 +9,7 @@
 #include "Ariazel/LayerStack.h"
 
 
+
 namespace Ariazel {
 
 	class ARIAZEL_API Application

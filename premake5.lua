@@ -12,8 +12,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Ariazel/vendor/GLFW/include"
+IncludeDir["Glad"] = "Ariazel/vendor/Glad/include"
 
 include "Ariazel/vendor/GLFW"
+include "Ariazel/vendor/Glad"
 
 project "Ariazel"
 	location "Ariazel"
@@ -36,12 +38,14 @@ project "Ariazel"
 	{
 		"%{prj.name}/vendor/spdlog/include",
 		"%{prj.name}/src",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -53,7 +57,8 @@ project "Ariazel"
 		defines
 		{
 			"AZ_PLATFORM_WINDOWS",
-			"ARIAZEL_BUILD_DLL"
+			"ARIAZEL_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 		
 		postbuildcommands
