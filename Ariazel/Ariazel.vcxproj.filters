@@ -34,6 +34,7 @@
     <ClInclude Include="src\Ariazel\Log.h">
       <Filter>Ariazel</Filter>
     </ClInclude>
+    <ClInclude Include="src\azpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ariazel\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Ariazel\Log.cpp">
       <Filter>Ariazel</Filter>
     </ClCompile>
+    <ClCompile Include="src\azpch.cpp" />
   </ItemGroup>
 </Project>

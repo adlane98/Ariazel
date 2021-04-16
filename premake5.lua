@@ -18,6 +18,9 @@ project "Ariazel"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "azpch.h"
+	pchsource "Ariazel/src/azpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.cpp",
