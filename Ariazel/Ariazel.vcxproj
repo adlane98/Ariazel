@@ -84,7 +84,8 @@
       <AdditionalIncludeDirectories>vendor\spdlog\include;src;vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -110,6 +111,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -136,6 +138,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -158,6 +161,8 @@
     <ClInclude Include="src\Ariazel\Events\Event.h" />
     <ClInclude Include="src\Ariazel\Events\KeyEvent.h" />
     <ClInclude Include="src\Ariazel\Events\MouseEvent.h" />
+    <ClInclude Include="src\Ariazel\Layer.h" />
+    <ClInclude Include="src\Ariazel\LayerStack.h" />
     <ClInclude Include="src\Ariazel\Log.h" />
     <ClInclude Include="src\Ariazel\Window.h" />
     <ClInclude Include="src\Platform\WindowsWindow.h" />
@@ -165,6 +170,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ariazel\Application.cpp" />
+    <ClCompile Include="src\Ariazel\Layer.cpp" />
+    <ClCompile Include="src\Ariazel\LayerStack.cpp" />
     <ClCompile Include="src\Ariazel\Log.cpp" />
     <ClCompile Include="src\Platform\WindowsWindow.cpp" />
     <ClCompile Include="src\azpch.cpp">

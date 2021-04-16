@@ -34,6 +34,12 @@
     <ClInclude Include="src\Ariazel\Events\MouseEvent.h">
       <Filter>Ariazel\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Ariazel\Layer.h">
+      <Filter>Ariazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ariazel\LayerStack.h">
+      <Filter>Ariazel</Filter>
+    </ClInclude>
     <ClInclude Include="src\Ariazel\Log.h">
       <Filter>Ariazel</Filter>
     </ClInclude>
@@ -47,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ariazel\Application.cpp">
+      <Filter>Ariazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ariazel\Layer.cpp">
+      <Filter>Ariazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ariazel\LayerStack.cpp">
       <Filter>Ariazel</Filter>
     </ClCompile>
     <ClCompile Include="src\Ariazel\Log.cpp">
