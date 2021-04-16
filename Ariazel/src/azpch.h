@@ -9,3 +9,5 @@
 #ifdef AZ_PLATFORM_WINDOWS
 #include <Windows.h>
 #endif // AZ_PLATFORM_WINDOWS
+
+#include "Ariazel/Log.h"

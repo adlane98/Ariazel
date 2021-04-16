@@ -1,4 +1,6 @@
 #pragma once
+
+#include "azpch.h"
 #include "Ariazel/Core.h"
 
 

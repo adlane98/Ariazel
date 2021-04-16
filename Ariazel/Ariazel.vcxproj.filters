@@ -7,6 +7,9 @@
     <Filter Include="Ariazel\Events">
       <UniqueIdentifier>{710B5665-5DD9-496B-466D-BA9132DA25D0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Ariazel.h" />
@@ -34,6 +37,12 @@
     <ClInclude Include="src\Ariazel\Log.h">
       <Filter>Ariazel</Filter>
     </ClInclude>
+    <ClInclude Include="src\Ariazel\Window.h">
+      <Filter>Ariazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
     <ClInclude Include="src\azpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="src\Ariazel\Log.cpp">
       <Filter>Ariazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\azpch.cpp" />
   </ItemGroup>

@@ -10,6 +10,11 @@ workspace "Ariazel"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Ariazel/vendor/GLFW/include"
+
+include "Ariazel/vendor/GLFW"
+
 project "Ariazel"
 	location "Ariazel"
 	kind "SharedLib"
@@ -30,7 +35,14 @@ project "Ariazel"
 	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include",
-		"%{prj.name}/src"
+		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
