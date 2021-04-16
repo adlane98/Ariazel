@@ -4,3 +4,6 @@
 [submodule "Ariazel/vendor/GLFW"]
 	path = Ariazel/vendor/GLFW
 	url = https://github.com/TheCherno/glfw
+[submodule "Ariazel/vendor/imGui"]
+	path = Ariazel/vendor/imGui
+	url = https://github.com/TheCherno/imgui

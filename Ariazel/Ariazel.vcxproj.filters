@@ -7,8 +7,14 @@
     <Filter Include="Ariazel\Events">
       <UniqueIdentifier>{710B5665-5DD9-496B-466D-BA9132DA25D0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ariazel\ImGui">
+      <UniqueIdentifier>{17976441-8357-E077-4C92-29F5B8112554}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +40,9 @@
     <ClInclude Include="src\Ariazel\Events\MouseEvent.h">
       <Filter>Ariazel\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Ariazel\ImGui\ImGuiLayer.h">
+      <Filter>Ariazel\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Ariazel\Layer.h">
       <Filter>Ariazel</Filter>
     </ClInclude>
@@ -46,6 +55,9 @@
     <ClInclude Include="src\Ariazel\Window.h">
       <Filter>Ariazel</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\WindowsWindow.h">
       <Filter>Platform</Filter>
     </ClInclude>
@@ -55,6 +67,9 @@
     <ClCompile Include="src\Ariazel\Application.cpp">
       <Filter>Ariazel</Filter>
     </ClCompile>
+    <ClCompile Include="src\Ariazel\ImGui\ImGuiLayer.cpp">
+      <Filter>Ariazel\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Ariazel\Layer.cpp">
       <Filter>Ariazel</Filter>
     </ClCompile>
@@ -63,6 +78,9 @@
     </ClCompile>
     <ClCompile Include="src\Ariazel\Log.cpp">
       <Filter>Ariazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\WindowsWindow.cpp">
       <Filter>Platform</Filter>

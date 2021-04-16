@@ -6,6 +6,8 @@
 #include "Ariazel/Layer.h"
 #include "Ariazel/Log.h"
 
+#include "Ariazel/ImGui/ImGuiLayer.h"
+
 // ----------Entry point---------
 #include "Ariazel/EntryPoint.h"
 // ----------------------------
