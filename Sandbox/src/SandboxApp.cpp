@@ -11,11 +11,18 @@ public:
 	void OnUpdate() override
 	{
 		//AZ_INFO("Example Layer::Update");
+
+		if (Ariazel::Input::IsKeyPressed(AZ_KEY_TAB))
+			AZ_TRACE("Tab key is pressed");
 	}
 
 	void OnEvent(Ariazel::Event& event) override
 	{
-		AZ_TRACE("{0}", event);
+		if (event.GetEventType() == Ariazel::EventType::KeyPressed)
+		{
+			Ariazel::KeyPressedEvent& e = (Ariazel::KeyPressedEvent&) event;
+			AZ_TRACE("{0}", e.GetKeyCode());
+		}
 	}
 };
 

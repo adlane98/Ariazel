@@ -160,9 +160,11 @@
     <ClInclude Include="src\Ariazel\Events\MouseEvent.h" />
     <ClInclude Include="src\Ariazel\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Ariazel\Input.h" />
+    <ClInclude Include="src\Ariazel\KeyCodes.h" />
     <ClInclude Include="src\Ariazel\Layer.h" />
     <ClInclude Include="src\Ariazel\LayerStack.h" />
     <ClInclude Include="src\Ariazel\Log.h" />
+    <ClInclude Include="src\Ariazel\MouseButtonCodes.h" />
     <ClInclude Include="src\Ariazel\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
