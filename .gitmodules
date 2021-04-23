@@ -7,3 +7,6 @@
 [submodule "Ariazel/vendor/imGui"]
 	path = Ariazel/vendor/imGui
 	url = https://github.com/TheCherno/imgui
+[submodule "Ariazel/vendor/glm"]
+	path = Ariazel/vendor/glm
+	url = https://github.com/g-truc/glm

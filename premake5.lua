@@ -16,6 +16,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Ariazel/vendor/GLFW/include"
 IncludeDir["Glad"] = "Ariazel/vendor/Glad/include"
 IncludeDir["imGui"] = "Ariazel/vendor/imGui"
+IncludeDir["glm"] = "Ariazel/vendor/glm"
 
 include "Ariazel/vendor/GLFW"
 include "Ariazel/vendor/Glad"
@@ -37,7 +38,9 @@ project "Ariazel"
 	files
 	{
 		"%{prj.name}/src/**.cpp",
-		"%{prj.name}/src/**.h"
+		"%{prj.name}/src/**.h",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	includedirs
@@ -46,7 +49,8 @@ project "Ariazel"
 		"%{prj.name}/src",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.imGui}"
+		"%{IncludeDir.imGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -106,8 +110,8 @@ project "Sandbox"
 	includedirs 
 	{
 		"Ariazel/vendor/spdlog/include",
-		"Ariazel/src"
-
+		"Ariazel/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links
