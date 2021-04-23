@@ -7,15 +7,15 @@ namespace Ariazel {
 	class ARIAZEL_API WindowResizeEvent : public Event
 	{
 	public:
-		WindowResizeEvent(unsigned int width, unsigned int length) : m_Width(width), m_Length(length) {}
+		WindowResizeEvent(unsigned int width, unsigned int height) : m_Width(width), m_Height(height) {}
 
 		inline float GetWidth() const { return m_Width; }
-		inline float GetLength() const { return m_Length; }
+		inline float GetHeight() const { return m_Height; }
 
 		std::string ToString() const override
 		{
 			std::stringstream sstream;
-			sstream << "WindowResizeEvent: " << m_Width << ", " << m_Length;
+			sstream << "WindowResizeEvent: " << m_Width << ", " << m_Height;
 			return sstream.str();
 		}
 
@@ -24,7 +24,7 @@ namespace Ariazel {
 
 	private:
 		unsigned int m_Width;
-		unsigned int m_Length;
+		unsigned int m_Height;
 	};
 
 	class ARIAZEL_API WindowCloseEvent : public Event

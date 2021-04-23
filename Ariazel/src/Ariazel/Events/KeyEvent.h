@@ -55,4 +55,23 @@ namespace Ariazel {
 		EVENT_CLASS_TYPE(KeyReleased)
 
 	};
+
+	class ARIAZEL_API KeyTypedEvent : public KeyEvent
+	{
+	public:
+		KeyTypedEvent(int keycode) : KeyEvent(keycode) {}
+
+
+		std::string ToString() const override
+		{
+			std::stringstream sstream;
+			sstream << "KeyTypedEvent: " << m_KeyCode;
+			return sstream.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyTyped)
+
+	private:
+		int m_RepeatCount;
+	};
 }

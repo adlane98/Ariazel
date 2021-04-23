@@ -10,7 +10,7 @@ public:
 
 	void OnUpdate() override
 	{
-		AZ_INFO("Example Layer::Update");
+		//AZ_INFO("Example Layer::Update");
 	}
 
 	void OnEvent(Ariazel::Event& event) override
