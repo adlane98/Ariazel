@@ -57,7 +57,7 @@ namespace Ariazel {
 	{
 		while (m_Running)
 		{
-			glClearColor(1, 0.26, 0.45, 0.12);
+			glClearColor((GLfloat) 1, (GLfloat) 0.26, (GLfloat) 0.45, (GLfloat) 0.12);
 			glClear(GL_COLOR_BUFFER_BIT);
 
 			for (Layer* layer : m_LayerStack)

@@ -1,15 +1,17 @@
 #pragma once
 
 #ifdef AZ_PLATFORM_WINDOWS
-	#ifdef ARIAZEL_BUILD_DLL
-		#define ARIAZEL_API __declspec(dllexport)
+	#if AZ_DYNAMIC_LINK
+		#ifdef ARIAZEL_BUILD_DLL
+			#define ARIAZEL_API __declspec(dllexport)
+		#else
+			#define ARIAZEL_API __declspec(dllimport)
+		#endif
 	#else
-		#define ARIAZEL_API __declspec(dllimport)
+		#define ARIAZEL_API
 	#endif
-/*
 #else
 	#error Hazel only support windows
-*/
 #endif
 
 #ifdef AZ_DEBUG
