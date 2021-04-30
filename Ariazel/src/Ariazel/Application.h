@@ -7,7 +7,7 @@
 #include "Events/ApplicationEvent.h"
 #include "Ariazel/LayerStack.h"
 
-
+#include "Ariazel/ImGui/ImGuiLayer.h"
 
 namespace Ariazel {
 
@@ -28,6 +28,7 @@ namespace Ariazel {
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 

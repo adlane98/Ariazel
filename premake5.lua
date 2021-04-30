@@ -111,7 +111,8 @@ project "Sandbox"
 	{
 		"Ariazel/vendor/spdlog/include",
 		"Ariazel/src",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.glm}",
+		"Ariazel/vendor"
 	}
 
 	links

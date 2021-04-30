@@ -1,6 +1,8 @@
 #include "azpch.h"
 #include <Ariazel.h>
 
+#include "imGui/imgui.h"
+
 class ExampleLayer : public Ariazel::Layer
 {
 public:
@@ -24,6 +26,13 @@ public:
 			AZ_TRACE("{0}", e.GetKeyCode());
 		}
 	}
+
+	void OnImGuiRender() override
+	{
+		ImGui::Begin("Test");
+		ImGui::Text("Hello world");
+		ImGui::End();
+	}
 };
 
 class Sandbox : public Ariazel::Application
@@ -32,7 +41,6 @@ public:
 	Sandbox() 
 	{
 		PushLayer(new ExampleLayer());
-		PushOverlay(new Ariazel::ImGuiLayer());
 	}
 
 	~Sandbox() 

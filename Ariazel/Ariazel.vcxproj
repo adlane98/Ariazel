@@ -166,7 +166,6 @@
     <ClInclude Include="src\Ariazel\Log.h" />
     <ClInclude Include="src\Ariazel\MouseButtonCodes.h" />
     <ClInclude Include="src\Ariazel\Window.h" />
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\azpch.h" />
@@ -586,11 +585,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ariazel\Application.cpp" />
+    <ClCompile Include="src\Ariazel\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Ariazel\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Ariazel\Layer.cpp" />
     <ClCompile Include="src\Ariazel\LayerStack.cpp" />
     <ClCompile Include="src\Ariazel\Log.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\azpch.cpp">
