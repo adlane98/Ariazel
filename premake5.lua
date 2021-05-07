@@ -72,11 +72,11 @@ project "Ariazel"
 		systemversion "latest"
 
 	defines
-		{
-			"AZ_PLATFORM_WINDOWS",
-			"ARIAZEL_BUILD_DLL",
-			"GLFW_INCLUDE_NONE"
-		}
+	{
+		"AZ_PLATFORM_WINDOWS",
+		"ARIAZEL_BUILD_DLL",
+		"GLFW_INCLUDE_NONE"
+	}
 
 	filter "configurations:Debug"
 		defines "AZ_DEBUG"

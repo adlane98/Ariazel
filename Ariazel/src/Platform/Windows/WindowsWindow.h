@@ -1,7 +1,9 @@
 #pragma once
 
 #include "Ariazel/Window.h"
-#include "GLFW/glfw3.h"
+#include "Ariazel/Renderer/GraphicsContext.h"
+
+#include <GLFW/glfw3.h>
 
 namespace Ariazel {
 
@@ -27,6 +29,7 @@ namespace Ariazel {
 		virtual void Shutdown();
 
 		GLFWwindow* m_Window;
+		GraphicsContext* m_Context;
 
 		struct WindowData
 		{
