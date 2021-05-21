@@ -18,6 +18,7 @@ namespace Ariazel {
 
 	private:
 		uint32_t m_RendererID;
+		BufferLayout m_Layout;
 	};
 
 
