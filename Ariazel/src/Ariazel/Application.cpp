@@ -173,11 +173,11 @@ namespace Ariazel {
 			glClearColor((GLfloat) 0.15f, (GLfloat) 0.15f, (GLfloat) 0.15f, (GLfloat) 1.0f);
 			glClear(GL_COLOR_BUFFER_BIT);
 
-			m_BlueShader->Bind();
-			m_SquareVA->Bind();
-			glDrawElements(GL_TRIANGLES, m_SquareVA->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
+			//m_BlueShader->Bind();
+			/*m_SquareVA->Bind();
+			glDrawElements(GL_TRIANGLES, m_SquareVA->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);*/
 			
-			m_Shader->Bind();
+			//m_Shader->Bind();
 			m_VertexArray->Bind();
 			glDrawElements(GL_TRIANGLES, m_VertexArray->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
 
